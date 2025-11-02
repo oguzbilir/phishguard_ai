@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PhishGuard AI Analysis</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="../icons/icon48.png" alt="PhishGuard AI Logo" id="logo">
+            <h1>PhishGuard AI</h1>
+        </div>
+        <div id="result-container" class="result-container">
+            <div class="score-circle" id="score-circle">
+                <span id="risk-score">--</span>
+            </div>
+            <h2 id="verdict">Analiz ediliyor...</h2>
+            <p id="analysis-summary">Lütfen sayfanın tamamen yüklenmesini bekleyin.</p>
+        </div>
+        <div class="details">
+            <h3>Analiz Detayları</h3>
+            <ul id="detailed-breakdown">
+                <!-- Details will be populated by popup.js -->
+            </ul>
+        </div>
+        <div class="footer">
+            <p id="recommendation"></p>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
