@@ -34,7 +34,6 @@ function updateUI(result) {
     const summaryEl = document.getElementById('analysis-summary');
     const breakdownListEl = document.getElementById('detailed-breakdown');
     const recommendationEl = document.getElementById('recommendation');
-    const logoEl = document.getElementById('logo');
 
     // Update score and verdict
     riskScoreEl.textContent = result.risk_score;
@@ -65,19 +64,9 @@ function updateUI(result) {
         listItem.innerHTML = `<strong>${readableKey}:</strong> (Score: ${value.score}) - <em>${value.reason}</em>`;
         breakdownListEl.appendChild(listItem);
     }
-
-    // Also update the main logo based on risk
-    logoEl.src = getIconPath(result.risk_score);
 }
 
 function displayWaitingMessage() {
     document.getElementById('verdict').textContent = 'Analiz bekleniyor...';
     document.getElementById('analysis-summary').textContent = 'Sayfa henüz tam olarak yüklenmemiş veya analiz edilmemiş olabilir. Lütfen bir an bekleyin.';
-}
-
-function getIconPath(riskScore) {
-    if (riskScore > 85) return '../icons/icon_critical.png';
-    if (riskScore > 60) return '../icons/icon_high.png';
-    if (riskScore > 30) return '../icons/icon_medium.png';
-    return '../icons/icon48.png'; // Default icon
 }
