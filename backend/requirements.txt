@@ -1,0 +1,11 @@
+Flask
+python-whois
+python-levenshtein
+requests
+BeautifulSoup4
+selenium
+imagehash
+Pillow
+webdriver-manager
+flask-cors
+gunicorn
