@@ -1,0 +1,32 @@
+[
+    {
+        "domain": "www.google.com",
+        "favicon_url": "https://www.gstatic.com/images/branding/searchlogo/ico/favicon.ico",
+        "favicon_hash": "ec94b14bceb49916",
+        "screenshot_hash": "f45455d55bd4c464"
+    },
+    {
+        "domain": "www.turkiye.gov.tr",
+        "favicon_url": "https://cdn.e-devlet.gov.tr/themes/izmir/images/favicons/favicon-196x196.1.8.0.png",
+        "favicon_hash": "c7a468dff4c00b66",
+        "screenshot_hash": "a020bf2f2f95d5d0"
+    },
+    {
+        "domain": "www.isbank.com.tr",
+        "favicon_url": "https://www.isbank.com.tr/favicon.ico",
+        "favicon_hash": null,
+        "screenshot_hash": "8b0b0f2f2f6d6960"
+    },
+    {
+        "domain": "www.garantibbva.com.tr",
+        "favicon_url": "https://www.garantibbva.com.tr/favicon.ico",
+        "favicon_hash": "96926cb66e6a858d",
+        "screenshot_hash": "a9486de7e4edc809"
+    },
+    {
+        "domain": "www.twitter.com",
+        "favicon_url": "https://abs.twimg.com/favicons/twitter.3.ico",
+        "favicon_hash": "d24e30b32d394b9e",
+        "screenshot_hash": "bc67c18e3c36c3c8"
+    }
+]

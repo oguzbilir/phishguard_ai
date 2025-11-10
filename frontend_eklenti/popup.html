@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Güvenli İnternet Asistanı</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 300px;
+            padding: 10px;
+            background-color: #f4f7f6;
+        }
+        h3 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        #result {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #ecf0f1;
+            border-left: 5px solid #bdc3c7;
+        }
+        .status {
+            font-weight: bold;
+        }
+        .score {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin: 10px 0;
+        }
+        .details ul {
+            padding-left: 20px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Güvenli İnternet Asistanı</h3>
+    <button id="analyzeBtn">Mevcut Sayfayı Analiz Et</button>
+    <div id="result" style="display:none;">
+        <div id="score" class="score"></div>
+        <div id="decision" class="status"></div>
+        <div id="details" class="details"><ul></ul></div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
