@@ -39,8 +39,8 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
             chrome.storage.local.set({ [sender.tab.id]: analysisResult }, () => {
                 console.log(`Analysis result for tab ${sender.tab.id} has been stored.`);
 
-                // Update the extension icon based on the risk score
-                updateIcon(sender.tab.id, analysisResult.risk_score);
+                // NOTE: Icon update functionality is disabled because the icon files are missing.
+                // updateIcon(sender.tab.id, analysisResult.risk_score);
             });
         }
     }
@@ -48,7 +48,8 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     return true;
 });
 
-// Function to update the extension icon based on the risk score
+// Function to update the extension icon based on the risk score (DISABLED)
+/*
 function updateIcon(tabId, riskScore) {
     let iconPath;
     if (riskScore > 85) {
@@ -70,6 +71,7 @@ function updateIcon(tabId, riskScore) {
         }
     }).catch(err => console.error("Failed to set icon:", err));;
 }
+*/
 
 // Clean up storage when a tab is closed
 chrome.tabs.onRemoved.addListener((tabId) => {
